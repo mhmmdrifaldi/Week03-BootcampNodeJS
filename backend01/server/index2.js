@@ -1,14 +1,14 @@
 import dotenv from "dotenv"
 import express, {response} from "express"
-dotenv.config()
+dotenv.config() //Menyambungkan dengan file .env melalui module dotenv
 
 const app = express()
 const port = process.env.PORT || 3003
 
-app.listen(port,()=>console.log(`Server listening on port `+ port))
-app.get('/', responseText)
-app.get('/json', responseJson)
-app.use('*', responseNotFound)
+app.listen(port,()=>console.log(`Server listening on port `+ port)) //Menampilkan kalimat yang diinginkan
+app.get('/', responseText) //Menampilkan data dalam bentuk Text
+app.get('/json', responseJson) //Menampilkan data dalam bentuk JSON
+app.use('*', responseNotFound) //Menampilkan respon error
 
 function responseText(req, res) {
 	res.setHeader('Content-Type','text/plain')

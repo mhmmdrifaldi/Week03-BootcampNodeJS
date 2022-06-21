@@ -23,7 +23,6 @@ const findOne = async (req,res)=>{
 const create = async (req,res)=>{
 	try {
 		const department = await req.context.models.departments.create({
-			department_id : req.body.department_id,
 			department_name : req.body.department_name,
 			location_id : req.body.location_id
 		})

@@ -23,7 +23,6 @@ const findOne = async (req,res)=>{
 const create = async (req,res)=>{
   try {
     const project = await req.context.models.projects.create({
-      proj_id : req.body.proj_id,
       proj_name : req.body.proj_name,
 			proj_createdon : req.body.proj_createdon,
 			proj_duedate : req.body.proj_duedate,

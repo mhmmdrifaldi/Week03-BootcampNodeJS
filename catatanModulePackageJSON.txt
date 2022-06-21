@@ -1,0 +1,5 @@
+Package.json
+ - express merupakan remove dari NodeJS
+ - nodemon untuk menjalankan aplikasi yang dibuat
+ - dotenv untuk mengkoneksikan pada .env yang akan dibuat
+ - @babel untuk mengenkripsi bahasa egma > 15 dipakai tanpa harus menambahkan type : module di package.json / sebagai pengganti tag module

@@ -23,7 +23,6 @@ const findOne = async (req,res)=>{
 const create = async (req,res)=>{
 	try {
 		const job = await req.context.models.jobs.create({
-			job_id : req.body.job_id,
 			job_title : req.body.job_title,
 			min_salary : req.body.min_salary,
 			max_salary : req.body.max_salary

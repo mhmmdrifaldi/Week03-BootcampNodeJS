@@ -23,7 +23,6 @@ const findOne = async (req,res)=>{
 const create = async (req,res)=>{
 	try {
 		const dependent = await req.context.models.dependents.create({
-			dependent_id : req.body.dependent_id,
 			first_name : req.body.first_name,
 			last_name : req.body.last_name,
 			relationship : req.body.relationship,
