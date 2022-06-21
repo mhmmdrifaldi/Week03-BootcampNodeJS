@@ -23,6 +23,7 @@ const findOne = async (req,res)=>{
 const create = async (req,res)=>{
 	try {
 		const country = await req.context.models.countries.create({
+			country_id : req.body.country_id,
 			country_name : req.body.country_name,
 			region_id : req.body.region_id
 		})

@@ -23,6 +23,7 @@ const findOne = async (req,res)=>{
 const create = async (req,res)=>{
 	try {
 		const employee = await req.context.models.employees.create({
+			employee_id : req.body.employee_id,
 			first_name : req.body.first_name,
 			last_name : req.body.last_name,
 			email : req.body.email,

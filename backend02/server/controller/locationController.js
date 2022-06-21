@@ -23,6 +23,7 @@ const findOne = async (req,res)=>{
 const create = async (req,res)=>{
   try {
     const location = await req.context.models.locations.create({
+      location_id : req.body.location_id,
       street_address : req.body.street_address,
 			postal_code : req.body.postal_code,
 			city : req.body.city,
