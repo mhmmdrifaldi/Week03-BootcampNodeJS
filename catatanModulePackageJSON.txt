@@ -7,3 +7,4 @@ Package.json
  - cookie-parse untuk cookie
  - compression untuk memperkecil ukuran project
  - sequelize-auto untuk merubah bentuk database menjadi javascript
+ - formidable untuk membuat formdata khusus upload file
