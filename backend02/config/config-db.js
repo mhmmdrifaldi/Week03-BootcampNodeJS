@@ -1,6 +1,7 @@
 import Sequelize from "sequelize";
 import config from './config';
 
+// Menghubungkan sequelize dengan database yang ada pada folder config
 const sequelize = new Sequelize(
     config.db_name,
     config.db_username,

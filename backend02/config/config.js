@@ -1,3 +1,4 @@
+// Mendeklarasikan penghubung dengan database
 const config = {
 	env : process.env.NODE_ENV || 'dev',
 	port : 3000,
