@@ -15,7 +15,7 @@ const create = async (req,res)=>{
 			department_id : parseInt(fields[9].value),
 			emp_profile : files[0].file.newFilename
 		})
-		return res.send(create)
+		return res.send(employee)
 	} catch (error) {
 		return res.status(404).send(error)
 	}
