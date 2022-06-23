@@ -8,3 +8,6 @@ Package.json
  - compression untuk memperkecil ukuran project
  - sequelize-auto untuk merubah bentuk database menjadi javascript
  - formidable untuk membuat formdata khusus upload file
+ - bcrypt untuk mengenkripsi password
+ - jsonwebtoken untuk membuat sebuah kode authentication (token) utuk dapat masuk kedalam web
+ - passport untuk mencompire dari data yang sudah di bcrypt
