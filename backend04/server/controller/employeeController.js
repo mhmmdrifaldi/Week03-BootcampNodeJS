@@ -61,6 +61,25 @@ const update = async (req,res)=>{
 	}
 }
 
+const updateNoFile = async (req,res)=>{
+	try {
+		const employee = await req.context.models.employees.update({
+			first_name : req.body.first_name,
+			last_name : req.body.last_name,
+			email : req.body.email,
+			phone_number : req.body.phone_number,
+			hire_date : req.body.hire_date,
+			job_id : req.body.job_id,
+			salary : req.body.salary,
+			manager_id : req.body.manager_id,
+			department_id : req.body.department_id,
+		},{ returning : true , where:{employee_id : req.params.id}})
+		return res.send(employee)
+	} catch (error) {
+		return res.status(404).send(error)
+	}
+}
+
 const deleted = async (req,res)=>{
 	try {
 		const employee = await req.context.models.employees.destroy({
@@ -77,5 +96,6 @@ export default {
 	findOne,
 	create,
 	update,
+	updateNoFile,
 	deleted
 }
