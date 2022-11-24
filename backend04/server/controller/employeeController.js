@@ -73,6 +73,7 @@ const updateNoFile = async (req,res)=>{
 			salary : req.body.salary,
 			manager_id : req.body.manager_id,
 			department_id : req.body.department_id,
+			emp_profile : null
 		},{ returning : true , where:{employee_id : req.params.id}})
 		return res.send(employee)
 	} catch (error) {
